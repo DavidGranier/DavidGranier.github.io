@@ -1,1 +1,25 @@
+p,ul,a,h1,h2,h3,h4
+{font-family: Raleway;}
 
+
+
+
+
+
+@media screen and (max-width: 768px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
+
+}
+@media screen and (max-width: 991px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
+
+}@media screen and (max-width: 1199px)
+{
+    /* Rédigez vos propriétés CSS ici */
+
+
+}
