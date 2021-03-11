@@ -11,60 +11,95 @@ p,ul,a,h1,h2,h3,h4
     font-family: Raleway;
 }
 
+a:visited
+{
+    text-decoration: none;
+}
 
 
-/* -----------DEBUT HEADER-----------*/
+
+/* -----------HEADER-----------*/
+
+.logo
+{
+    position: absolute;
+    top : 20px;
+    left: 20px;
+
+}
 
 header
 {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100px;
+    margin-right: 2em;
+    margin-left: 2em;
+    justify-content: flex-end;
 }
-
-.logo
+.header
 {
     display: flex;
-    align-items: center;
+ 
+}
+.header > a
+{
+   text-decoration: none;
+   display: flex;
+   width: 150px ;
+   height:60px;
+   align-items: flex-end;
+   justify-content: center;
+   border-top: solid 3px white;
 }
 
-.hebergement .activites .inscrire
+.header > a:hover
 {
-    height: 100px;
-    width: 300px;
+    color: #0065FC;
+    border-top: solid 3px #0065FC
 }
 
-
-.menu
+header > a
 {
-    font-size: 0.8em;
-    text-decoration: none ;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
     display: flex;
+    width: 150px;
     height: 60px;
-    width: 100px;
-    justify-content: center;
     align-items: flex-end;
-}
-.menu:hover
-{
-    background-color: blue;
+    justify-content: center;
+    border-top: solid 3px white;
 }
 
-/* -----------DEBUT HEADER-----------*/
+header > a:hover
+{
+    border-top: solid 3px #0065FC;
+}
+
+/* -----------CONTENU-----------*/
+
+.contenu
+{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+
+
+/* -----------FOOTER-----------*/
 
 footer
 {
     background-color: #f2f2f2;
     width: 100%;
     display:flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .footer
 {
     padding: 2em;
+    margin-right: 150px;
 }
 
 .lienfooter
@@ -78,22 +113,19 @@ h3
     justify-content: flex-start;
 }
 
-/* -----------DEBUT RESPONSIVE DESIGN-----------*/
+/* -----------RESPONSIVE DESIGN-----------*/
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 768px) /*Mobile*/
 {
-    /* Rédigez vos propriétés CSS ici */
-
 
 }
+
 @media screen and (max-width: 991px)
 {
-    /* Rédigez vos propriétés CSS ici */
 
+}
 
-}@media screen and (max-width: 1199px)
+@media screen and (max-width: 1199px)
 {
-    /* Rédigez vos propriétés CSS ici */
-
 
 }
