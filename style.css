@@ -6,22 +6,22 @@ html body
     margin: 0px;
 }
 
-p,ul,a,h1,h2,h3,h4
+p,ul,a,h1,h2,h3,h4, input
 {
     font-family: Raleway;
 }
 
-/* A faire : 
--rendre le header responsive*/
-
-
 /* -----------HEADER-----------*/
+/* A faire : 
+-adapter pour mobile 250px
+-revoir les positions exactes du logo et du bouton s'inscrire sur mobile
+*/
 
 .logo
 {
     position: absolute;
-    top : 20px;
-    left: 20px;
+    top : 25px;
+    left: 25px;
 
 }
 
@@ -31,6 +31,7 @@ header
     flex-wrap: wrap;
     margin-right: 2em;
     margin-left: 2em;
+    padding-bottom: 20px;
     justify-content: flex-end;
 }
 .header
@@ -85,8 +86,55 @@ header > a:hover
 {
     margin-left: 2em;
     margin-right: 2em;
-    text-align: justify;
 }
+
+/* -----------BARRE DE RECHERCHE ET FILTRES-----------*/
+
+#searchbox
+{
+    height: 3em;
+}
+
+input
+{
+    height: 100%;
+    font-weight: bold;
+}
+
+.boutonlocalisation
+{
+    border-top-left-radius: 20% ;
+    border-bottom-left-radius: 20%;
+    border: solid 1px #DEEBFF;
+    background-color: #DEEBFF;
+    width: 50px;
+}
+
+.champs
+{
+    border-radius: 0%;
+    border: solid 1px #DEEBFF;
+    padding:1em;
+    width: 250px;
+}
+
+.boutonrechercher
+{
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: solid 1px #DEEBFF;
+    background-color: #0065FC;
+    color:white;
+    width: 100px;
+}
+
+
+
+#section-un
+{
+
+}
+
 
 
 
@@ -130,6 +178,7 @@ h3
     {
         flex-wrap: wrap-reverse;
         margin: 0;
+        padding-bottom: 0px;
     }
 
     .header
@@ -155,7 +204,7 @@ h3
     .header > a:hover
     {
         border-bottom: solid 3px #0065FC;
-        border-top: none;
+        border-top: solid 3px white;
     }
     
 }

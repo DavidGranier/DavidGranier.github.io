@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <title>Reservia</title>
@@ -8,7 +8,6 @@
         <!--FONT-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-        <!--FONT-->
         <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve.">
     </head>
 
@@ -19,8 +18,8 @@
                 
                 <div class="header">
                     
-                    <a  href="reservia.html">Hébergements</a>
-                    <a  href="reservia.html">Activités</a>
+                    <a  href="#section-deux">Hébergements</a>
+                    <a  href="#section-quatre">Activités</a>
                 
                 </div>
                 
@@ -33,6 +32,12 @@
             <section id="section-un">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
+               
+                <form method="POST" action="reservia.php">
+                    <div id="searchbox">
+                        <input class="boutonlocalisation" type="submit" value="O"><input class="champs" type="search" name="Localisation" maxlenght="100" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher">
+                    </div>
+                </form>
             </section>
 
             <!--Contenu "Hebergements"-->
@@ -123,6 +128,7 @@
 
             <!--Contenu "Activités à Marseille"-->
             <section id="section-quatre">
+                <h2>Activités à Marseille</h2>
 
             </section>
         </div>
