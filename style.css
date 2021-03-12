@@ -11,11 +11,8 @@ p,ul,a,h1,h2,h3,h4
     font-family: Raleway;
 }
 
-a:visited
-{
-    text-decoration: none;
-}
-
+/* A faire : 
+-rendre le header responsive*/
 
 
 /* -----------HEADER-----------*/
@@ -31,6 +28,7 @@ a:visited
 header
 {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 2em;
     margin-left: 2em;
     justify-content: flex-end;
@@ -38,6 +36,7 @@ header
 .header
 {
     display: flex;
+    margin-left: 95px;
  
 }
 .header > a
@@ -55,6 +54,11 @@ header
 {
     color: #0065FC;
     border-top: solid 3px #0065FC
+}
+
+.header > a:visited
+{
+    color:black;
 }
 
 header > a
@@ -99,12 +103,17 @@ footer
 .footer
 {
     padding: 2em;
-    margin-right: 150px;
+    margin-right: 130px;
 }
 
-.lienfooter
+.footer > p > a 
 {
     text-decoration: none;
+}
+
+.footer > p > a:visited
+{
+    color: black;
 }
 
 h3
@@ -115,9 +124,40 @@ h3
 
 /* -----------RESPONSIVE DESIGN-----------*/
 
-@media screen and (max-width: 768px) /*Mobile*/
+@media screen and (max-width: 650px) /*Mobile*/
 {
+    header
+    {
+        flex-wrap: wrap-reverse;
+        margin: 0;
+    }
 
+    .header
+    {
+        margin: 0;
+        width: 100%;
+    }
+
+    .header > a 
+    {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 3px #DEEBFF;
+    }
+
+    header > a
+    {
+        width: 150px;
+        margin-bottom: 0px;
+    }
+
+    .header > a:hover
+    {
+        border-bottom: solid 3px #0065FC;
+        border-top: none;
+    }
+    
 }
 
 @media screen and (max-width: 991px)
