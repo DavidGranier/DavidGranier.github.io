@@ -5,10 +5,12 @@
         <meta charset="utf-8" />
         <title>Reservia</title>
         <link rel="stylesheet" href="style.css">
-        <!--FONT-->
+        <!--FONTAWESOME-->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!--GOOGLE FONT-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-        <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve.">
+        <!--RESPONSIVE-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
     </head>
@@ -16,7 +18,7 @@
     <body>
 
         <header>
-                <img class="logo" src="images/reservia.svg" alt="logo">
+                <img class="logo" src="images/Reservia.svg" alt="logo">
                 
                 <div class="header">
                     
@@ -25,7 +27,7 @@
                 
                 </div>
                 
-                <a href="reservia.html">S'inscrire</a>
+                <a href="index.html">S'inscrire</a>
             
         </header>
 
@@ -35,9 +37,9 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                
-                <form method="POST" action="reservia.php">
+                <form class="form" method="POST" action="reservia.php">
                     <div id="searchbox">
-                        <input class="boutonlocalisation" type="submit" value="O"><input class="champs" type="search" name="Localisation" maxlenght="100" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher">
+                        <input class="boutonlocalisation" type="submit"><input class="champs" type="search" name="Localisation" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher"><input class="boutonrecherchermobile" type="submit" value="Oooo">
                     </div>
                 </form>
             </section>

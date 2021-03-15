@@ -93,6 +93,7 @@ header > a:hover
 #searchbox
 {
     height: 3em;
+    display: flex;
 }
 
 input
@@ -105,15 +106,16 @@ input
 {
     border-top-left-radius: 20% ;
     border-bottom-left-radius: 20%;
-    border: solid 1px #DEEBFF;
-    background-color: #DEEBFF;
+    border: solid 1px #f2f2f2;
+    background-color: #f2f2f2;
     width: 50px;
+    font-family: FontAwesome;
 }
 
 .champs
 {
     border-radius: 0%;
-    border: solid 1px #DEEBFF;
+    border: solid 1px #f2f2f2;
     padding:1em;
     width: 250px;
 }
@@ -122,11 +124,16 @@ input
 {
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    border: solid 1px #DEEBFF;
+    border: solid 1px #0065FC;
     background-color: #0065FC;
     color:white;
     width: 100px;
 }
+
+.boutonrecherchermobile
+    {
+        display: none;
+    }
 
 
 
@@ -207,6 +214,27 @@ h3
         border-top: solid 3px white;
     }
     
+    .champs
+    {
+        width: auto;
+        display: flex;
+        padding: auto;
+    }
+
+    .boutonrechercher
+    {
+        display: none;
+    }
+    .boutonrecherchermobile
+    {
+        display: inline-block;
+        width: 50px;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        border: solid 1px #DEEBFF;
+        background-color: #0065FC;
+        color:white;
+    }
 }
 
 @media screen and (max-width: 991px)
