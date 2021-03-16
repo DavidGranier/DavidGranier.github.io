@@ -6,7 +6,7 @@
         <title>Reservia</title>
         <link rel="stylesheet" href="style.css">
         <!--FONTAWESOME-->
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/818dad9a81.js" crossorigin="anonymous"></script>
         <!--GOOGLE FONT-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
 
     <body>
 
+        <!--HEADER-->
         <header>
                 <img class="logo" src="images/Reservia.svg" alt="logo">
                 
@@ -39,8 +40,9 @@
                
                 <form class="form" method="POST" action="reservia.php">
                     <div id="searchbox">
-                        <input class="boutonlocalisation" type="submit"><input class="champs" type="search" name="Localisation" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher"><input class="boutonrecherchermobile" type="submit" value="Oooo">
+                        <button><i class="fas fa-map-marker-alt"></i></button><input class="champs" type="search" name="Localisation" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher"><bouton id="loupe"><i class="fas fa-search"></i></bouton>
                     </div>
+                    
                 </form>
             </section>
 

@@ -8,7 +8,7 @@ html body
 
 p,ul,a,h1,h2,h3,h4, input
 {
-    font-family: Raleway;
+    font-family: FontAwesome, Raleway;
 }
 
 /* -----------HEADER-----------*/
@@ -102,14 +102,14 @@ input
     font-weight: bold;
 }
 
-.boutonlocalisation
+button
 {
     border-top-left-radius: 20% ;
     border-bottom-left-radius: 20%;
     border: solid 1px #f2f2f2;
     background-color: #f2f2f2;
     width: 50px;
-    font-family: FontAwesome;
+
 }
 
 .champs
@@ -122,28 +122,18 @@ input
 
 .boutonrechercher
 {
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
     border: solid 1px #0065FC;
     background-color: #0065FC;
     color:white;
     width: 100px;
 }
 
-.boutonrecherchermobile
+#loupe
     {
         display: none;
     }
-
-
-
-#section-un
-{
-
-}
-
-
-
 
 /* -----------FOOTER-----------*/
 
@@ -205,7 +195,9 @@ h3
     header > a
     {
         width: 150px;
+        height: 57px;
         margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .header > a:hover
@@ -219,18 +211,21 @@ h3
         width: auto;
         display: flex;
         padding: auto;
+        padding-left:30px;
+         ;
     }
 
     .boutonrechercher
     {
         display: none;
     }
-    .boutonrecherchermobile
+    #loupe
     {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50px;
-        border-top-right-radius: 10%;
-        border-bottom-right-radius: 10%;
+        border-radius:20%;
         border: solid 1px #DEEBFF;
         background-color: #0065FC;
         color:white;
