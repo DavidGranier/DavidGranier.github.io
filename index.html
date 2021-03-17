@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
         <!--RESPONSIVE-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-
+        
     </head>
 
     <body>
@@ -33,17 +33,19 @@
         </header>
 
         <div class="contenu">
-            <!--Barre de recherche et filtres de recherche-->
+            <!--Barre de recherche-->
             <section id="section-un">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                
-                <form class="form" method="POST" action="reservia.php">
-                    <div id="searchbox">
-                        <button><i class="fas fa-map-marker-alt"></i></button><input class="champs" type="search" name="Localisation" value="Marseille, France"/><input class="boutonrechercher" type="submit" value="Rechercher"><bouton id="loupe"><i class="fas fa-search"></i></bouton>
-                    </div>
-                    
+                <form id="searchbox" method="POST" action="reservia.php">
+                        <button id="ville"><i class="fas fa-map-marker-alt fa-lg"></i></button><input id="champs" type="text" name="Localisation" value="Marseille, France"/><input id="boutonrechercher" type="submit" value="Rechercher"/><button id="loupe"><i class="fas fa-search"></i></button>  
                 </form>
+                <!--Filtres de recherche-->
+                <div id="filtres">
+                    <p>Filtres </p>
+                    
+                </div>
             </section>
 
             <!--Contenu "Hebergements"-->
