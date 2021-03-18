@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+
+    <!--HEAD-->
+
     <head>
+
         <meta charset="utf-8" />
         <title>Reservia</title>
         <link rel="stylesheet" href="style.css">
-        <!--FONTAWESOME-->
+        <!--ICONES FONTAWESOME-->
         <script src="https://kit.fontawesome.com/818dad9a81.js" crossorigin="anonymous"></script>
-        <!--GOOGLE FONT-->
+        <!--POLICE RALEWAY GOOGLE FONT-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-        <!--RESPONSIVE-->
+        <!--RESPONSIVE EN FONCTION DE LA TAILLE D'ECRAN-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         
     </head>
@@ -18,16 +22,16 @@
     <body>
 
         <!--HEADER-->
+
         <header>
+
                 <img class="logo" src="images/Reservia.svg" alt="logo">
-                
                 <div class="header">
                     
                     <a  href="#section-deux">Hébergements</a>
-                    <a  href="#section-quatre">Activités</a>
+                    <a  href="#section-trois">Activités</a>
                 
                 </div>
-                
                 <a href="index.html">S'inscrire</a>
             
         </header>
@@ -35,104 +39,144 @@
         <div class="contenu">
 
             <!--Barre de recherche-->
+
             <section id="section-un">
+
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-               
                 <form id="searchbox" method="POST" action="reservia.php">
+
                         <button id="ville"><i class="fas fa-map-marker-alt fa-lg"></i></button><input id="champs" type="text" name="Localisation" value="Marseille, France"/><input id="boutonrechercher" type="submit" value="Rechercher"/><button id="loupe"><i class="fas fa-search"></i></button>  
+                
                 </form>
 
             <!--Filtres de recherche-->
                 
                 <div id="filtres">
+
                     <p>Filtres</p>
                     <a href=""><i class="fas fa-money-bill-wave"></i><p>Économique</p></a>
                     <a href=""><i class="ffas fa-child"></i><p>Familial</p></a>
                     <a href=""><i class="fas fa-heart"></i><p>Romantique</p></a>
                     <a href=""><i class="fas fa-dog"></i><p>Animanx autorisés</p></a>
+                
                 </div>
 
                 <div id="info">
+
                     <i class="fas fa-info fa-xs"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                
                 </div>
+
             </section>
 
-            <!--Contenu "Hebergements"-->
-            <section id="section-deux">
-                <h2>Hebergements</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi metus,
-                    dignissim quis pellentesque ut, pellentesque et ligula. Aenean eget enim leo.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Sed accumsan elit eros, vel faucibus tortor tempus at. Nullam nec enim id ante hendrerit
-                    malesuada non nec augue. Nulla non erat ligula. Sed pretium, sapien quis efficitur iaculis, 
-                    mauris libero consectetur justo, eget condimentum lacus ipsum vel enim. Pellentesque pretium 
-                    ipsum ut est tincidunt, vel bibendum ex suscipit. Donec mollis tristique velit, non tincidunt
-                    justo laoreet ac. Proin et ligula placerat, aliquet erat sed, placerat nisl. Duis quis tempus
-                    tellus. Cras auctor tortor et risus viverra, sit amet congue ligula egestas. Morbi sodales
-                    nisl fermentum ex vehicula varius. Duis vehicula nisi a nibh dapibus egestas.</p>
             
-            </section>
 
-            <!--Contenu "Les plus populaires"-->
-            <section id="section-trois">
-                <h2>Les plus populaires</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi metus,
-                    dignissim quis pellentesque ut, pellentesque et ligula. Aenean eget enim leo.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Sed accumsan elit eros, vel faucibus tortor tempus at. Nullam nec enim id ante hendrerit
-                    malesuada non nec augue. Nulla non erat ligula. Sed pretium, sapien quis efficitur iaculis, 
-                    mauris libero consectetur justo, eget condimentum lacus ipsum vel enim. Pellentesque pretium 
-                    ipsum ut est tincidunt, vel bibendum ex suscipit. Donec mollis tristique velit, non tincidunt
-                    justo laoreet ac. Proin et ligula placerat, aliquet erat sed, placerat nisl. Duis quis tempus
-                    tellus. Cras auctor tortor et risus viverra, sit amet congue ligula egestas. Morbi sodales
-                    nisl fermentum ex vehicula varius. Duis vehicula nisi a nibh dapibus egestas.</p>
+            <section id="section-deux">
 
+                <!--Contenu "Hebergements -->
+                <div id="hebergements">
+
+                    <h2>Hébergements à Marseille</h2>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Auberge la Cannebière</h3>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span><span id="etoilegrise"><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de <strong>52€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de <strong>76€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span><span id="etoilegrise"><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de <strong>46€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span><span id="etoilegrise"><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span><span id="etoilegrise"><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+                    <a href=""><div>
+                        <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <h3>Hôtel chez Anima</h3>
+                        <p>Nuit à partir de <strong>96€</strong></p>
+                        <span><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i><i class="fas fa-star fa-xs"></i></span>
+                    </div></a>
+
+                </div>
+
+                <!--Contenu "Les plus populaires"-->
+                <div id="lespluspopulaires">
+
+                    <h2>Les plus populaires</h2>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+            
             </section>
 
             <!--Contenu "Activités à Marseille"-->
-            <section id="section-quatre">
+
+            <section id="section-trois">
+
                 <h2>Activités à Marseille</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi metus,
-                    dignissim quis pellentesque ut, pellentesque et ligula. Aenean eget enim leo.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Sed accumsan elit eros, vel faucibus tortor tempus at. Nullam nec enim id ante hendrerit
-                    malesuada non nec augue. Nulla non erat ligula. Sed pretium, sapien quis efficitur iaculis, 
-                    mauris libero consectetur justo, eget condimentum lacus ipsum vel enim. Pellentesque pretium 
-                    ipsum ut est tincidunt, vel bibendum ex suscipit. Donec mollis tristique velit, non tincidunt
-                    justo laoreet ac. Proin et ligula placerat, aliquet erat sed, placerat nisl. Duis quis tempus
-                    tellus. Cras auctor tortor et risus viverra, sit amet congue ligula egestas. Morbi sodales
-                    nisl fermentum ex vehicula varius. Duis vehicula nisi a nibh dapibus egestas.</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
 
             </section>
+
         </div>
-        <!-- Footer du site-->        
+
+        <!-- Footer du site-->      
+
         <footer>
+
             <div class="footer">
+
                 <h3>A propos</h3>
-                 
-                    <p><a href="">Fonctionnement du site</a></p>
-                    <p><a href="">Conditions générales de vente</a></p>
-                    <p><a href="">Données et confidentialité</a></p>
+                <p><a href="">Fonctionnement du site</a></p>
+                <p><a href="">Conditions générales de vente</a></p>
+                <p><a href="">Données et confidentialité</a></p>
                 
             </div>
 
             <div class="footer">
+
                 <h3>Nos hébergements</h3>
-            
-                    <p><a href="">Charte qualité</a></p>
-                    <p><a href="">Soumettre votre hôtel</a></p>
+                <p><a href="">Charte qualité</a></p>
+                <p><a href="">Soumettre votre hôtel</a></p>
                 
             </div>
 
             <div class="footer">
+
                 <h3>Assistance</h3>
-                
-                    <p><a href="">Centre d'aide</a></p>
-                    <p><a href="">Nous contacter</a></p>
+                <p><a href="">Centre d'aide</a></p>
+                <p><a href="">Nous contacter</a></p>
                 
             </div>
+
         </footer>
+
     </body>
+
 </html>
