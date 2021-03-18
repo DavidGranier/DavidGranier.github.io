@@ -97,6 +97,78 @@
         margin-right: 3em;
     }
 
+    #section-deux
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* -----------HEBERGEMENTS A MARSEILLE-----------*/
+
+    #hebergements
+    {
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 880px;
+    }
+
+    #hebergements > h2 
+    {
+        width: 100%;
+        font-weight: bold;
+        margin-left: 40px;
+    }
+
+    #hebergements > a 
+    {
+        width: 235px;
+        height: auto;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: white;
+        text-decoration:none;
+        color: black;
+        margin-bottom: 30px;
+        box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+    }
+
+    #hebergements > a > div > img
+    {
+        width: 100%;
+        height: 115px;
+        border-radius: 20px  20px 0 0;
+    }
+
+    #hebergements > a > div > h3 
+    {
+        font-weight: bold;
+        margin: 5px 0 5px 10px;
+    }
+
+    #hebergements > a > div > p 
+    {
+        margin: 0 0 5px 10px;
+    }
+
+    #hebergements > a >div > span
+    {
+        margin: 0 0 10px 10px;
+        color: #0065FC;
+    }
+
+    #hebergements > a > div > #etoilegrise
+    {
+        color:#f2f2f2;
+        margin-left: 0px;
+    }
+
+
+    
+
     /* -----------BARRE DE RECHERCHE-----------*/
 
 
@@ -322,6 +394,16 @@
         border-top: solid 3px white;
     }
 
+    /*Cartes d'hebergements width 100%*/
+
+    #hebergements
+    {
+        background-color: white;
+    }
+    #hebergements > a 
+    {
+        width: 100%;
+    }
     
 }
 
