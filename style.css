@@ -7,6 +7,8 @@
         margin: 0px;
     }
 
+    
+
     p,ul,a,h1,h2,h3,h4, input
     {
         font-family: "FontAwesome","Raleway", Arial;
@@ -30,7 +32,7 @@
     {
         position: absolute;
         top : 30px;
-        left: 50px;
+        left: 100px;
 
     }
 
@@ -62,8 +64,11 @@
 
     .header > a:hover
     {
-        color: #0065FC;
-        border-top: solid 3px #0065FC
+        font-weight: bold;
+        color : #0065FC;
+        border-top: solid 3px #0065FC;
+        
+
     }
 
     .header > a:visited
@@ -204,6 +209,8 @@
            background-color: #f2f2f2 ;
        }
    
+       /* -----------INFOS-----------*/
+
        #info
        {
            display: flex;
@@ -240,12 +247,12 @@
     #section-deux
     {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     /* -----------HEBERGEMENTS A MARSEILLE-----------*/
 
-    #hebergements
+    #hebergements /*Block hébergements*/
     {
         background-color: #f2f2f2;
         border-radius: 20px;
@@ -322,10 +329,9 @@
 
     /* -----------LES PLuS POPULAIRES-----------*/
 
-    #lespluspopulaires 
+    #lespluspopulaires /*Block*/
     {
         width:340px;
-        max-width: 340px;
         margin-left: 40px;
         background-color: #f2f2f2;
         border-radius: 20px;
@@ -345,10 +351,10 @@
         margin: 0;
     }
 
-    #lespluspopulaires > a 
+    #lespluspopulaires > a /*Cartes cliquables*/
     {
         display: flex;
-        width: 335px;
+        
         height: 135px;
         border-radius: 20px;
         padding: 5px;
@@ -364,7 +370,7 @@
         display: flex;
     }
 
-    #lespluspopulaires > a > div > img 
+    #lespluspopulaires > a > div > img /*Images*/
     {
         height: 100%;
         width: 125px;
@@ -372,12 +378,35 @@
         object-fit: cover; 
     }
 
-    #lespluspopulaires > a > div > div
+    #lespluspopulaires > a > div > div /*Description*/
     {
         margin-left: 20px;
     }
+
+    #lespluspopulaires > a > div > div > h3 
+    {
+        font-weight: bold;
+        margin: 10px 0 5px 10px;
+    }
+
+    #lespluspopulaires > a > div > div > p 
+    {
+        margin: 0 0 30px 10px;
+    }
+
+    #lespluspopulaires > a > div > div > span /*Etoiles*/
+    {
+        margin: 0 0 10px 10px;
+        color: #0065FC;
+    }
+
+    #lespluspopulaires > a > div > div > .etoilegrise
+    {
+        color:#f2f2f2;
+        margin-left: 0px;
+    }
     
-    /* -----------FOOTER-----------*/
+    /* ----------------------FOOTER----------------------*/
 
     footer
     {
@@ -403,7 +432,7 @@
         color: black;
     }
 
-    h3
+    .footer > h3
     {
         display:flex;
         justify-content: flex-start;
@@ -412,15 +441,42 @@
 
 /* ----------------------RESPONSIVE DESIGN----------------------*/
 
+@media screen and (max-width: 1439px) /* Laptop*/
+{
+  /*Les plus populaires width 100%*/
+
+  #lespluspopulaires
+  {
+      width: 800px;
+      margin-left: 0px;
+      margin-bottom: 40px;
+  }
+
+}
+
 @media screen and (max-width: 700px) /* Petite Tablette*/
 {
     /* -----------PROPRIETES GENERALES RESPONSIVE-----------*/
 
     .contenu
     {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+
+    #section-un
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #hebergements
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /*AJOUTER DES DIVS POUR CREER UNE MARGE EN VERSION TABLETTE ET MOBILE*/
 
     /* -----------RESPONSIVE HEADER-----------*/
 
@@ -465,17 +521,12 @@
         border-top: solid 3px white;
     }
 
-    /*Filtres*/
-
-    #filtres > a
+    #filtres > a /*Filtres tassés pour tablette et mobile*/
     {
         margin-right: 10px;
     }
 
-
-    /*Cartes d'hebergements width 100%*/
-
-    #hebergements
+    #hebergements /*Cartes d'hebergements width 100%*/
     {
         background-color: white;
         padding: 0;
@@ -489,13 +540,23 @@
     {
         margin-left: 0;
     }
+
+    #lespluspopulaires
+    {
+        border-radius: 0;
+    }
+
+    #lespluspopulaires > #titrepopulaire
+    {
+        justify-content: space-around;
+    }
+
 }
 
 @media screen and (max-width: 450px) /*Mobile*/
 {
-    /* -----------RESPONSIVE BARRE DE RECHERCHE ET FILTRES-----------*/
 
-    #searchbox
+    #searchbox /*Barre de recherche mobile*/
     {
         width: 100%;
     }
@@ -530,7 +591,7 @@
         margin-left: -10px;
     }
 
-    #filtres > p
+    #filtres > p /*Filtres (retour à la ligne)*/
     {
         width: 100%;
     }
@@ -540,11 +601,31 @@
         margin-left: 0px;
     }
 
+    #lespluspopulaires /*Block Populaire Mobile*/
+    {
+        padding-right: 0 ;
+        padding-left: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    #lespluspopulaires > a /*Cartes mobile*/
+    {
+        height: 145px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #lespluspopulaires > a > div > div /*Gain d'espace dans les cartes*/
+    {
+        margin-left: 5px;
+        overflow:scroll;
+    }
 }
 
 @media screen and (max-width: 250px) /*Petit écran*/
 {
-    header
+    header /*MINI HEADER*/
     {
         display: block;
     }
