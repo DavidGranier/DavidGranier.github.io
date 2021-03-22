@@ -4,7 +4,8 @@
 
     html body
     {
-        margin: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     
@@ -32,7 +33,7 @@
     {
         position: absolute;
         top : 30px;
-        left: 100px;
+        left: 50px;
 
     }
 
@@ -240,14 +241,15 @@
 
     .contenu
     {
-        margin-left: 3em;
-        margin-right: 3em;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #section-deux
     {
         display: flex;
         flex-wrap: wrap-reverse;
+        margin-bottom: 50px;
     }
 
     /* -----------HEBERGEMENTS A MARSEILLE-----------*/
@@ -405,6 +407,126 @@
         color:#f2f2f2;
         margin-left: 0px;
     }
+
+    /* -----------ACTIVITES-----------*/
+
+    #section-trois  /*Block*/
+    {
+        display: flex;
+        flex-wrap:wrap;
+        
+        height: auto;
+        margin-left: 50px;
+        margin-right: 0;
+    }
+
+    #section-trois > h2 /*Titre*/
+    {
+        width: 100%;
+    }
+
+   #pack-un, #pack-deux /*Disposition cartes*/
+   {
+       display: flex;
+       flex-wrap: wrap;
+       margin-bottom: 50px;
+   }
+
+   
+
+   .petite > a > div /*Petites cartes*/
+   {
+       width: 302px;
+       height: 165px;
+       border-radius: 20px 20px 20px 20px;
+       box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+       margin-right: 45px;
+       margin-bottom: 45px;
+   }
+  .petite > a > div > img 
+   {
+        object-fit: cover;
+        width: 302px;
+        height: 110px;
+        border-radius: 20px 20px 0 0;
+   }
+
+   .moyenne > a > div /*Moyennes cartes*/
+   {
+       width: 302px;
+       height: 235px;
+       border-radius: 20px 20px 20px 20px;
+       box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+       margin-right: 45px;
+       margin-bottom: 45px;
+   }
+  .moyenne > a > div > img
+   {
+        object-fit: cover;
+        width: 302px;
+        height: 180px;
+        border-radius: 20px 20px 0 0;
+   }
+
+
+
+   .grande > a > div > img /*Grandes cartes*/
+   {
+        object-fit: cover;
+        width: 302px;
+        height: 390px;
+        border-radius: 20px 20px 0 0;
+   }
+
+ 
+    
+    .grande > a > div
+    {
+        width: 302px;
+        height: 445px;
+        margin-right: 40px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
+    }
+
+    .petite > a > div > h3 /*Nom cliquable*/
+    {
+        margin-top: 10px;
+        margin-left: 20px;
+        color:black;
+    }
+
+    .petite > a 
+    {
+        text-decoration: none;
+    }
+
+    .moyenne > a > div > h3 
+    {
+        margin-top: 10px;
+        margin-left: 20px;
+        color:black;
+    }
+
+    .moyenne > a 
+    {
+        text-decoration: none;
+    }
+
+    .grande > a > div > h3 
+    {
+        margin-top: 10px;
+        margin-left: 20px;
+        color:black;
+    }
+
+    .grande > a 
+    {
+        text-decoration: none;
+    }
+
+    
+
     
     /* ----------------------FOOTER----------------------*/
 
@@ -450,6 +572,19 @@
       width: 800px;
       margin-left: 0px;
       margin-bottom: 40px;
+  }
+}
+  @media screen and (min-width: 1440px)
+{
+  #section-un, #section-trois
+  {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  #hebergements
+  {
+      margin-left: 50px;
   }
 
 }
