@@ -6,6 +6,7 @@
     {
         margin-left: 0px;
         margin-right: 0px;
+        margin-top: 0px;
     }
 
     
@@ -55,6 +56,7 @@
     .header > a
     {
     text-decoration: none;
+    color:black;
     display: flex;
     width: 150px ;
     height:60px;
@@ -70,11 +72,6 @@
         border-top: solid 3px #0065FC;
         
 
-    }
-
-    .header > a:visited
-    {
-        color:black;
     }
 
     header > a
@@ -414,10 +411,12 @@
     {
         display: flex;
         flex-wrap:wrap;
-        
+        justify-content: space-between;
+        max-width: 1334px;
         height: auto;
         margin-left: 50px;
         margin-right: 0;
+        margin-bottom: 60px;
     }
 
     #section-trois > h2 /*Titre*/
@@ -429,7 +428,16 @@
    {
        display: flex;
        flex-wrap: wrap;
-       margin-bottom: 50px;
+       flex:1;
+        justify-content: space-around;
+        max-width: 665px;
+   }
+
+   .colonne
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
    }
 
    
@@ -440,8 +448,6 @@
        height: 165px;
        border-radius: 20px 20px 20px 20px;
        box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-       margin-right: 45px;
-       margin-bottom: 45px;
    }
   .petite > a > div > img 
    {
@@ -451,14 +457,13 @@
         border-radius: 20px 20px 0 0;
    }
 
+
    .moyenne > a > div /*Moyennes cartes*/
    {
        width: 302px;
        height: 235px;
        border-radius: 20px 20px 20px 20px;
        box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
-       margin-right: 45px;
-       margin-bottom: 45px;
    }
   .moyenne > a > div > img
    {
@@ -484,7 +489,6 @@
     {
         width: 302px;
         height: 445px;
-        margin-right: 40px;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0 0px 10px 0px rgb(170, 170, 170);
     }
@@ -599,17 +603,14 @@
         margin-right: 0px;
     }
 
-    #section-un
+    #section-un, #hebergements, #section-trois
     {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    #hebergements
-    {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+ 
+    
 
     /*AJOUTER DES DIVS POUR CREER UNE MARGE EN VERSION TABLETTE ET MOBILE*/
 
@@ -754,7 +755,7 @@
     #lespluspopulaires > a > div > div /*Gain d'espace dans les cartes*/
     {
         margin-left: 5px;
-        overflow:scroll;
+        overflow:hidden;
     }
 }
 
