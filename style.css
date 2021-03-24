@@ -574,6 +574,21 @@
 
 /* ----------------------RESPONSIVE DESIGN----------------------*/
 
+@media screen and (min-width: 1440px)
+{
+    #lespluspopulaires
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #hebergements
+    {
+        margin-right:0;
+    }
+}
+
+
 @media screen and (max-width: 1439px) /* Laptop*/
 {
   /*Les plus populaires width 100%*/
@@ -581,7 +596,7 @@
   #lespluspopulaires
   {
       width: 800px;
-      margin-left: 0px;
+
       margin-right: 50px;
       margin-bottom: 40px;
   }
@@ -621,12 +636,14 @@
     #lespluspopulaires
     {
         margin-left: 50px;
-        margin-right: 50px;
+        margin-right: 40px;
     }
+
+
 
     #section-trois
     {
-        margin-right: 50px;
+        margin-right: 40px;
     }
 }
 
@@ -707,6 +724,7 @@
     {
         border-radius: 0;
         margin-right: 0px;
+        margin-left: 0px;
     }
 
     #lespluspopulaires > #titrepopulaire
