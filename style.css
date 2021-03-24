@@ -94,6 +94,10 @@
 
        /* -----------BARRE DE RECHERCHE-----------*/
 
+       #section-un
+       {
+           margin-left: 50px;
+       }
 
        #searchbox
        {
@@ -261,6 +265,7 @@
         flex-wrap: wrap;
         max-width: 800px;
         padding: 40px 40px 40px 40px;
+        margin-left: 50px;
     }
 
     #hebergements > h2 /*Titre*/
@@ -331,7 +336,7 @@
     #lespluspopulaires /*Block*/
     {
         width:340px;
-        margin-left: 40px;
+        margin-left: 50px;
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 40px;
@@ -373,8 +378,9 @@
     {
         height: 100%;
         width: 125px;
+        min-width: 125px;
         border-radius: 20px 0 0 20px;
-        object-fit: cover; 
+        object-fit: cover;
     }
 
     #lespluspopulaires > a > div > div /*Description*/
@@ -422,6 +428,7 @@
     #section-trois > h2 /*Titre*/
     {
         width: 100%;
+        margin-left: 10px;
     }
 
    #pack-un, #pack-deux /*Disposition cartes*/
@@ -575,48 +582,67 @@
   {
       width: 800px;
       margin-left: 0px;
-      margin-bottom: 40px;
-  }
-}
-  @media screen and (min-width: 1440px)
-{
-  #section-un, #section-trois
-  {
-      margin-left: 50px;
       margin-right: 50px;
+      margin-bottom: 40px;
   }
 
   #hebergements
   {
-      margin-left: 50px;
+      margin-right: 50px;
   }
 
+  /* Activités responsive 880px*/
+
+  #section-trois 
+  {
+      max-width: 880px;
+  }
+
+  .petite > a > div
+  {
+      margin-bottom: 45px;
+  }
+
+  .moyenne > a > div
+  {
+      margin-bottom: 45px;
+  }
+
+  .grande > a > div
+  {
+    margin-bottom: 45px;
+  }
+
+  
 }
 
-@media screen and (max-width: 700px) /* Petite Tablette*/
+@media screen and (min-width: 700px)
 {
-    /* -----------PROPRIETES GENERALES RESPONSIVE-----------*/
-
-    .contenu
+    #lespluspopulaires
     {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
-    #section-un, #hebergements, #section-trois
+    #section-trois
     {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 50px;
+    }
+}
+
+
+
+/* ----------------------Petite Tablette----------------------*/
+
+@media screen and (max-width: 700px)
+{
+    #section-un,#hebergements,#section-trois
+    {
+        margin-left: 20px;
+        margin-right: 20px
     }
 
- 
-    
-
-    /*AJOUTER DES DIVS POUR CREER UNE MARGE EN VERSION TABLETTE ET MOBILE*/
-
-    /* -----------RESPONSIVE HEADER-----------*/
-
-    header
+    header  /*HEADER*/
     {
         flex-wrap: wrap-reverse;
         margin: 0;
@@ -680,6 +706,7 @@
     #lespluspopulaires
     {
         border-radius: 0;
+        margin-right: 0px;
     }
 
     #lespluspopulaires > #titrepopulaire
@@ -687,10 +714,61 @@
         justify-content: space-around;
     }
 
+    #section-trois  /*ACTIVITES width 100%*/
+    {
+        flex-direction: column;
+    }
+
+   .colonne, .grande
+   {
+       width: 100%;
+       margin-right: 10px;
+   }
+    .petite > a > div
+    {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 50px;
+    }
+
+    .petite > a > div > img
+    {
+        width: 100%;
+        height: 135px;
+    }
+
+    .moyenne > a > div
+    {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 50px;
+    }
+
+    .moyenne > a > div > img
+    {
+        width: 100%;
+        height: 135px;
+    }
+
+    .grande > a > div
+    {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 50px;
+    }
+
+    .grande > a > div > img
+    {
+        width: 100%;
+        height: 135px;
+    }
+    
+
 }
 
 @media screen and (max-width: 450px) /*Mobile*/
 {
+
 
     #searchbox /*Barre de recherche mobile*/
     {
@@ -748,15 +826,16 @@
     #lespluspopulaires > a /*Cartes mobile*/
     {
         height: 145px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #lespluspopulaires > a > div > div /*Gain d'espace dans les cartes*/
     {
         margin-left: 5px;
-        overflow:hidden;
+        overflow: hidden;
     }
+
 }
 
 @media screen and (max-width: 250px) /*Petit écran*/
@@ -785,5 +864,10 @@
     .header > a
     {
         width: 100%;
+    }
+
+    h3
+    {
+        font-size: small;
     }
 }
