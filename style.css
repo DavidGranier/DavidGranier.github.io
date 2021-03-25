@@ -238,13 +238,6 @@
            flex:1;
        }
 
-    /* -----------CONTENU-----------*/
-
-    .contenu
-    {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 
     #section-deux
     {
@@ -574,7 +567,7 @@
 
 /* ----------------------RESPONSIVE DESIGN----------------------*/
 
-@media screen and (min-width: 1440px)
+@media screen and (min-width: 1440px) /*DESKTOP*/
 {
     #lespluspopulaires
     {
@@ -631,7 +624,7 @@
   
 }
 
-@media screen and (min-width: 700px)
+@media screen and (min-width: 700px) /* Grande tablette*/
 {
     #lespluspopulaires
     {
@@ -809,6 +802,7 @@
     {
         display: none;
     }
+
     #loupe
     {
         display: flex;
@@ -856,7 +850,7 @@
 
 }
 
-@media screen and (max-width: 250px) /*Petit écran*/
+@media screen and (max-width: 250px) /*Tout Petit écran*/
 {
     header /*MINI HEADER*/
     {
@@ -884,8 +878,8 @@
         width: 100%;
     }
 
-    h3
+    h3  /*Gain de place les plus populaires*/
     {
         font-size: small;
-    }
+    } 
 }
