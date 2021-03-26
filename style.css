@@ -47,13 +47,13 @@
         padding-bottom: 20px;
         justify-content: flex-end;
     }
-    .header
+    nav
     {
         display: flex;
         margin-left: 95px;
     
     }
-    .header > a
+    nav > a
     {
     text-decoration: none;
     color:black;
@@ -65,7 +65,7 @@
     border-top: solid 3px white;
     }
 
-    .header > a:hover
+    nav > a:hover
     {
         font-weight: bold;
         color : #0065FC;
@@ -457,6 +457,11 @@
         border-radius: 20px 20px 0 0;
    }
 
+   #pack-deux > .colonne > .petite > a > div > img /*Position img Notre Dame de la Garde*/
+   {
+    object-position: top;
+   }
+
 
    .moyenne > a > div /*Moyennes cartes*/
    {
@@ -581,7 +586,6 @@
     }
 }
 
-
 @media screen and (max-width: 1439px) /* Laptop*/
 {
   /*Les plus populaires width 100%*/
@@ -596,7 +600,7 @@
 
   #hebergements
   {
-      margin-right: 50px;
+      margin-right: 40px;
   }
 
   /* Activités responsive 880px*/
@@ -624,7 +628,7 @@
   
 }
 
-@media screen and (min-width: 700px) /* Grande tablette*/
+@media screen and (min-width: 701px) /* Grande tablette*/
 {
     #lespluspopulaires
     {
@@ -640,11 +644,7 @@
     }
 }
 
-
-
-/* ----------------------Petite Tablette----------------------*/
-
-@media screen and (max-width: 700px)
+@media screen and (max-width: 700px) /*Petite Tablette*/
 {
     #section-un,#hebergements,#section-trois
     {
@@ -665,13 +665,13 @@
         left: 20px;
     }
 
-    .header
+    nav
     {
         margin: 0;
         width: 100%;
     }
 
-    .header > a 
+    nav > a 
     {
         width: 50%;
         justify-content: center;
@@ -687,7 +687,7 @@
         margin-bottom: 10px;
     }
 
-    .header > a:hover
+    nav > a:hover
     {
         border-bottom: solid 3px #0065FC;
         border-top: solid 3px white;
@@ -857,7 +857,7 @@
         display: block;
     }
 
-    .header
+    nav
     {
         flex-direction: column ;
     }
@@ -873,7 +873,7 @@
         width: 100%;
     }
 
-    .header > a
+    nav > a
     {
         width: 100%;
     }
@@ -882,4 +882,33 @@
     {
         font-size: small;
     } 
+}
+
+
+
+/*A:HOVER des cartes cliquables (OPTIONNEL)*/
+
+#hebergements > a:hover
+{
+    transform: scale(1.01);
+}
+
+#lespluspopulaires > a:hover
+{
+    transform: scale(1.01);
+}
+
+.grande > a > div:hover
+{
+    transform: scale(1.01);
+}
+
+.moyenne > a > div:hover
+{
+    transform: scale(1.01);
+}
+
+.petite > a > div:hover
+{
+    transform: scale(1.01);
 }
