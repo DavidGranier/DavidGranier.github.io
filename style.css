@@ -818,7 +818,7 @@
         margin-left: -10px;
     }
 
-    #boutonrechercher > p 
+    #boutonrechercher > span
     {
         display: none;
     }
