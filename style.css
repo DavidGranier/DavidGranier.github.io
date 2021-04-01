@@ -150,6 +150,12 @@
            font-size: 1.1em;
            font-weight: bold;
        }
+
+       #boutonrechercher > p
+       {
+            align-items: center;
+            margin : 0 0 0 0;
+       }
    
        #loupe
            {
@@ -800,11 +806,6 @@
 
     #boutonrechercher
     {
-        display: none;
-    }
-
-    #loupe
-    {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -815,6 +816,16 @@
         background-color: #0065FC;
         color:white;
         margin-left: -10px;
+    }
+
+    #boutonrechercher > p 
+    {
+        display: none;
+    }
+
+    #loupe
+    {
+        display: block;
     }
 
     #filtres > p /*Filtres (retour à la ligne)*/
