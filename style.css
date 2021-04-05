@@ -87,10 +87,6 @@
         border-top: solid 3px white;
     }
 
-    header > a:hover
-    {
-        border-top: solid 3px #0065FC;
-    }
 
        /* -----------BARRE DE RECHERCHE-----------*/
 
@@ -682,7 +678,7 @@
         width: 50%;
         justify-content: center;
         align-items: center;
-        border-bottom: solid 3px #DEEBFF;
+        border-bottom: solid 3px #F2F2F2;
     }
 
     header > a
